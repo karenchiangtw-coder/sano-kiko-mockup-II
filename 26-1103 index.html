@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>SANO KIKO 佐野機工｜Anitech Material Corp. 聯禾應用材料有限公司</title>
+  <meta name="description" content="SANO KIKO 佐野機工日本安全防護產品專區 — Anitech Material Corp. 聯禾應用材料有限公司。提供 CERBERUS SC17、FUDO SF7、BENKEI SB224、BINE SHIELD（バイン盾）、OROCHI SO7、SASUMATA SM445 產品規格、圖解與原廠影片。" />
+  <style>
+    :root {
+      --color-primary: #0e1f33;
+      --color-secondary: #334e68;
+      --color-text: #182430;
+      --color-muted: #627d98;
+      --color-bg-base: #ffffff;
+      --color-bg-subtle: #f8fafc;
+      --color-border: #e2e8f0;
+      --color-border-dark: #9fb3c8;
+      --container-width: 1240px;
+      --transition-base: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+      color: var(--color-text);
+      background-color: var(--color-bg-base);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    button {
+      font-family: inherit;
+      font-size: inherit;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .site-header {
+      background-color: var(--color-bg-base);
+      border-bottom: 1px solid var(--color-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      background-color: rgba(255, 255, 255, 0.96);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 84px;
+    }
+
+    .brand-lockup {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      cursor: pointer;
+    }
+
+    .brand-anitech {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      letter-spacing: 0.1em;
+    }
+
+    .brand-divider {
+      color: var(--color-border-dark);
+      font-weight: 300;
+    }
+
+    .brand-sanokiko {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--color-secondary);
+      letter-spacing: 0.05em;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .nav-link {
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--color-muted);
+      padding: 8px 0;
+      border-bottom: 2px solid transparent;
+      transition: var(--transition-base);
+    }
+
+    .nav-link:hover {
+      color: var(--color-primary);
+    }
+
+    .nav-link.active {
+      color: var(--color-primary);
+      border-bottom-color: var(--color-primary);
+    }
+
+    .mobile-nav-toggle {
+      display: none;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      padding: 8px 14px;
+      border: 1px solid var(--color-border-dark);
+    }
+
+    .page-view {
+      display: none;
+    }
+
+    .page-view.active {
+      display: block;
+      animation: fadeIn 0.25s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn-corporate {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 32px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      background-color: var(--color-primary);
+      color: #ffffff;
+      border: 1px solid var(--color-primary);
+      transition: var(--transition-base);
+    }
+
+    .btn-corporate:hover {
+      background-color: var(--color-secondary);
+      border-color: var(--color-secondary);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 22px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      background-color: transparent;
+      color: var(--color-primary);
+      border: 1px solid var(--color-border-dark);
+      transition: var(--transition-base);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--color-primary);
+      background-color: var(--color-bg-subtle);
+    }
+
+    .media-frame {
+      width: 100%;
+      background-color: var(--color-bg-subtle);
+      border: 1px solid var(--color-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .media-frame.ratio-hero {
+      aspect-ratio: 16 / 10;
+      background-color: #ffffff;
+    }
+
+    .media-frame.ratio-product {
+      aspect-ratio: 16 / 10;
+      background-color: #ffffff;
+    }
+
+    .media-frame.ratio-guide {
+      aspect-ratio: 4 / 3;
+      background-color: #ffffff;
+    }
+
+    .media-frame.ratio-thumb {
+      width: 156px;
+      height: 108px;
+      background-color: #ffffff;
+    }
+
+    .media-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 14px;
+    }
+
+    .media-frame.ratio-thumb img {
+      padding: 6px;
+    }
+
+    .img-fallback-notice {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+      color: var(--color-muted);
+      background-color: var(--color-bg-subtle);
+    }
+
+    .media-frame.is-fallback .img-fallback-notice {
+      display: flex;
+    }
+
+    .media-frame.is-fallback img {
+      display: none;
+    }
+
+    .fallback-title {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 4px;
+    }
+
+    .fallback-desc {
+      font-size: 0.76rem;
+      color: var(--color-muted);
+      line-height: 1.5;
+    }
+
+    .photo-caption-note {
+      font-size: 0.82rem;
+      color: var(--color-muted);
+      margin-top: 12px;
+      line-height: 1.6;
+    }
+
+    .home-hero {
+      padding: 96px 0 120px;
+    }
+
+    .home-grid {
+      display: grid;
+      grid-template-columns: 5.5fr 6.5fr;
+      gap: 72px;
+      align-items: center;
+    }
+
+    .home-subtitle {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--color-secondary);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .home-title {
+      font-size: 2.75rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      line-height: 1.18;
+      letter-spacing: 0.02em;
+      margin-bottom: 30px;
+    }
+
+    .home-lead {
+      font-size: 1.05rem;
+      color: var(--color-secondary);
+      line-height: 1.9;
+      margin-bottom: 44px;
+    }
+
+    .page-header {
+      padding: 72px 0 44px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .page-title {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      letter-spacing: 0.02em;
+      margin-bottom: 10px;
+    }
+
+    .page-intro {
+      font-size: 1rem;
+      color: var(--color-secondary);
+    }
+
+    .table-section {
+      padding: 48px 0 96px;
+    }
+
+    .table-scroll-container {
+      width: 100%;
+      overflow-x: auto;
+      border-top: 2px solid var(--color-primary);
+      border-bottom: 1px solid var(--color-border-dark);
+    }
+
+    .comparison-table {
+      width: 100%;
+      min-width: 980px;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    .comparison-table th {
+      background-color: var(--color-bg-subtle);
+      color: var(--color-primary);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 18px 20px;
+      border-bottom: 1px solid var(--color-border-dark);
+      white-space: nowrap;
+    }
+
+    .comparison-table td {
+      padding: 26px 20px;
+      border-bottom: 1px solid var(--color-border);
+      vertical-align: middle;
+      font-size: 0.94rem;
+      color: var(--color-text);
+    }
+
+    .comparison-table tbody tr {
+      transition: background-color 0.15s ease;
+    }
+
+    .comparison-table tbody tr:hover {
+      background-color: var(--color-bg-subtle);
+    }
+
+    .clickable-photo {
+      cursor: pointer;
+      transition: var(--transition-base);
+    }
+
+    .clickable-photo:hover {
+      border-color: var(--color-primary);
+      box-shadow: 0 4px 12px rgba(15, 31, 51, 0.08);
+    }
+
+    .product-name-link {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      cursor: pointer;
+      display: inline-block;
+      margin-bottom: 4px;
+      letter-spacing: 0.02em;
+    }
+
+    .product-name-link:hover {
+      text-decoration: underline;
+    }
+
+    .product-name-jp {
+      display: block;
+      font-size: 0.82rem;
+      color: var(--color-muted);
+      font-weight: 400;
+      letter-spacing: 0.03em;
+    }
+
+    .detail-link-btn {
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: var(--color-primary);
+      white-space: nowrap;
+      padding: 9px 16px;
+      border: 1px solid var(--color-border-dark);
+      display: inline-block;
+      transition: var(--transition-base);
+    }
+
+    .detail-link-btn:hover {
+      background-color: var(--color-primary);
+      color: #ffffff;
+      border-color: var(--color-primary);
+    }
+
+    .detail-top-bar {
+      padding: 32px 0 0;
+    }
+
+    .detail-overview {
+      padding: 40px 0 72px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .detail-overview-grid {
+      display: grid;
+      grid-template-columns: 6.2fr 5.8fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .detail-model-en {
+      font-size: 2.3rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      letter-spacing: 0.02em;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+
+    .detail-model-jp {
+      font-size: 0.95rem;
+      color: var(--color-muted);
+      margin-bottom: 28px;
+      letter-spacing: 0.05em;
+    }
+
+    .detail-description {
+      font-size: 1.02rem;
+      color: var(--color-text);
+      line-height: 1.9;
+      margin-bottom: 32px;
+    }
+
+    .detail-subheading {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .detail-feature-list li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+      color: var(--color-secondary);
+      line-height: 1.7;
+    }
+
+    .detail-feature-list li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--color-primary);
+      font-weight: 700;
+    }
+
+    .spec-section {
+      padding: 80px 0;
+      border-bottom: 1px solid var(--color-border);
+      background-color: var(--color-bg-subtle);
+    }
+
+    .spec-section-header {
+      margin-bottom: 40px;
+    }
+
+    .section-eyebrow {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--color-secondary);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .section-title-main {
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      letter-spacing: 0.02em;
+    }
+
+    .compact-spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-top: 2px solid var(--color-primary);
+      border-bottom: 1px solid var(--color-border-dark);
+      background-color: #ffffff;
+      font-size: 0.95rem;
+    }
+
+    .compact-spec-table th,
+    .compact-spec-table td {
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--color-border);
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    .compact-spec-table th {
+      width: 18%;
+      color: var(--color-secondary);
+      font-weight: 700;
+      background-color: var(--color-bg-subtle);
+      font-size: 0.86rem;
+      letter-spacing: 0.04em;
+    }
+
+    .compact-spec-table td {
+      width: 32%;
+      color: var(--color-text);
+    }
+
+    .diagram-section {
+      padding: 88px 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .diagram-header-row {
+      margin-bottom: 48px;
+    }
+
+    .diagram-grid-4col {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+    }
+
+    .diagram-card {
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      border: 1px solid var(--color-border);
+      border-top: 3px solid var(--color-primary);
+      padding: 24px;
+      transition: var(--transition-base);
+    }
+
+    .diagram-card:hover {
+      box-shadow: 0 10px 30px rgba(15, 31, 51, 0.06);
+      transform: translateY(-2px);
+    }
+
+    .diagram-title {
+      font-size: 1.02rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      margin-top: 18px;
+      margin-bottom: 10px;
+      letter-spacing: 0.02em;
+    }
+
+    .diagram-desc {
+      font-size: 0.88rem;
+      color: var(--color-secondary);
+      line-height: 1.75;
+    }
+
+    .supplement-note {
+      margin-top: 40px;
+      padding: 20px 24px;
+      background-color: var(--color-bg-subtle);
+      border-left: 3px solid var(--color-secondary);
+      font-size: 0.9rem;
+      color: var(--color-secondary);
+      line-height: 1.8;
+    }
+
+    .video-section {
+      padding: 88px 0;
+    }
+
+    .video-layout-grid {
+      display: grid;
+      grid-template-columns: 4.5fr 7.5fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .video-stage {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background-color: #000000;
+      border: 1px solid var(--color-border-dark);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 12px 36px rgba(15, 31, 51, 0.12);
+    }
+
+    .video-stage iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    .video-fallback-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 14px 20px;
+      background-color: var(--color-bg-subtle);
+      border: 1px solid var(--color-border);
+      border-top: none;
+      font-size: 0.84rem;
+      color: var(--color-secondary);
+    }
+
+    .video-fallback-bar a {
+      font-weight: 700;
+      color: var(--color-primary);
+      text-decoration: underline;
+    }
+
+    .detail-bottom-nav {
+      padding: 36px 0 96px;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .prose-container {
+      max-width: 820px;
+      padding: 80px 0 120px;
+    }
+
+    .prose-container p {
+      font-size: 1.05rem;
+      color: var(--color-secondary);
+      line-height: 2;
+      margin-bottom: 28px;
+    }
+
+    .site-footer {
+      background-color: var(--color-primary);
+      color: rgba(255, 255, 255, 0.85);
+      padding: 56px 0 40px;
+      font-size: 0.88rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 28px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .footer-brand {
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: #ffffff;
+    }
+
+    .footer-brand span {
+      font-weight: 400;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.65);
+      margin-left: 12px;
+    }
+
+    .footer-nav {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .footer-nav button,
+    .footer-nav a {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      transition: var(--transition-base);
+    }
+
+    .footer-nav button:hover,
+    .footer-nav a:hover {
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      padding-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    @media (max-width: 1024px) {
+      .home-grid,
+      .detail-overview-grid,
+      .video-layout-grid {
+        grid-template-columns: 1fr;
+        gap: 44px;
+      }
+
+      .compact-spec-table th,
+      .compact-spec-table td {
+        display: block;
+        width: 100% !important;
+      }
+
+      .compact-spec-table th {
+        background-color: var(--color-primary);
+        color: #ffffff;
+        padding: 12px 20px;
+      }
+
+      .diagram-grid-4col {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 32px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 24px;
+      }
+
+      .mobile-nav-toggle {
+        display: inline-block;
+      }
+
+      .main-nav {
+        display: none;
+        position: absolute;
+        top: 84px;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        border-bottom: 1px solid var(--color-border);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 24px;
+        gap: 16px;
+        box-shadow: 0 10px 24px rgba(15, 31, 51, 0.06);
+      }
+
+      .main-nav.open {
+        display: flex;
+      }
+
+      .brand-sanokiko,
+      .brand-divider {
+        display: none;
+      }
+
+      .home-title {
+        font-size: 2.1rem;
+      }
+
+      .diagram-grid-4col {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-lockup" onclick="showPage('home')" role="button" tabindex="0" aria-label="Anitech SANO KIKO 首頁">
+        <span class="brand-anitech">ANITECH MATERIAL CORP.</span>
+        <span class="brand-divider">/</span>
+        <span class="brand-sanokiko">SANO KIKO 佐野機工</span>
+      </div>
+
+      <button class="mobile-nav-toggle" onclick="toggleMobileNav()" aria-label="開啟導覽選單">
+        MENU ☰
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="主導覽列">
+        <button class="nav-link active" data-target="home" onclick="showPage('home')">HOME</button>
+        <button class="nav-link" data-target="products" onclick="showPage('products')">PRODUCTS</button>
+        <button class="nav-link" data-target="about" onclick="showPage('about')">ABOUT</button>
+        <button class="nav-link" data-target="contact" onclick="showPage('contact')">CONTACT</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="view-home" class="page-view active">
+      <div class="home-hero">
+        <div class="container home-grid">
+          <div>
+            <div class="home-subtitle">日本安全防護產品</div>
+            <h1 class="home-title">SANO KIKO 佐野機工</h1>
+            <p class="home-lead">
+              佐野機工專注於安全防護產品的開發，針對不同使用場域及需求，提供多元的產品設計，涵蓋分離式、長桿型、輕量型、手持型及隨身防護等產品。
+            </p>
+            <button class="btn-corporate" onclick="showPage('products')">
+              瀏覽產品總覽
+            </button>
+          </div>
+          <div>
+            <div class="media-frame ratio-hero">
+              <img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sc17_06-01.jpg" alt="SANO KIKO 佐野機工安全防護產品" onerror="handleImgFallback(this)" />
+              <div class="img-fallback-notice">
+                <div class="fallback-title">SANO KIKO 佐野機工原廠產品主圖</div>
+                <div class="fallback-desc">CERBERUS SC17 原廠產品照片</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-products" class="page-view">
+      <div class="page-header">
+        <div class="container">
+          <h1 class="page-title">SANO KIKO 全系列產品規格與搭配比較表</h1>
+          <p class="page-intro">以下整理各項產品的主要特色與規格，點選產品照片或名稱即可查看詳細介紹。</p>
+        </div>
+      </div>
+      <div class="table-section">
+        <div class="container">
+          <div class="table-scroll-container">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th style="width: 180px;">產品照片</th>
+                  <th>產品名稱及型號</th>
+                  <th>主要特性</th>
+                  <th>尺寸</th>
+                  <th>重量</th>
+                  <th>型號或規格選項</th>
+                  <th style="width: 130px;">詳細資料</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="media-frame ratio-thumb clickable-photo" onclick="showPage('sc17')">
+                      <img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sc17_06-01.jpg" alt="CERBERUS SC17" onerror="handleImgFallback(this)"/>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="product-name-link" onclick="showPage('sc17')">CERBERUS SC17</span>
+                    <span class="product-name-jp">ケルベロス SC17</span>
+                  </td>
+                  <td>分離式設計，按壓後瞬間捲繞限制行動，可與叉桿分離以保持安全距離</td>
+                  <td>本體全長：約 168 cm</td>
+                  <td>本體重量：約 1.76 kg</td>
+                  <td>可選桿件規格：SM445-PSW 或 SM445-1800</td>
+                  <td><button class="detail-link-btn" onclick="showPage('sc17')">查看詳情</button></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="media-frame ratio-thumb clickable-photo" onclick="showPage('sf7')">
+                      <img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sf7_01.jpg" alt="FUDO SF7" onerror="handleImgFallback(this)"/>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="product-name-link" onclick="showPage('sf7')">FUDO SF7</span>
+                    <span class="product-name-jp">不動 SF7（SF7-PSL）</span>
+                  </td>
+                  <td>長桿型設計，針對手部或腿部瞬間捲繞拘束並以高強度繩索連接控制</td>
+                  <td>全長：約 170 cm</td>
+                  <td>重量：約 1.6 kg</td>
+                  <td>型號：SF7-PSL</td>
+                  <td><button class="detail-link-btn" onclick="showPage('sf7')">查看詳情</button></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="media-frame ratio-thumb clickable-photo" onclick="showPage('sb224')">
+                      <img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sb224_01.jpg" alt="BENKEI SB224" onerror="handleImgFallback(this)"/>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="product-name-link" onclick="showPage('sb224')">BENKEI SB224</span>
+                    <span class="product-name-jp">弁慶 SB224</span>
+                  </td>
+                  <td>輕量小型、特殊形狀頭部設計、可自立設置，適合有限空間操作</td>
+                  <td>SB224-PSK：約 148 cm<br />SB224-PSL：約 173 cm</td>
+                  <td>SB224-PSK：約 0.95 kg<br />SB224-PSL：約 1.1 kg</td>
+                  <td>SB224-PSK / SB224-PSL</td>
+                  <td><button class="detail-link-btn" onclick="showPage('sb224')">查看詳情</button></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="media-frame ratio-thumb clickable-photo" onclick="showPage('bineshield')">
+                      <img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/baindate_03-03.png" alt="BINE SHIELD" onerror="handleImgFallback(this)"/>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="product-name-link" onclick="showPage('bineshield')">BINE SHIELD（バイン盾）</span>
+                    <span class="product-name-jp">バイン盾</span>
+                  </td>
+                  <td>平時作為 A4 活頁夾使用，緊急時可作為防護小盾進行短暫防護並迅速避難</td>
+                  <td>約 335 × 237 mm</td>
+                  <td>約 525 g</td>
+                  <td>適用 A4 文件（黑、藍、粉、綠）</td>
+                  <td><button class="detail-link-btn" onclick="showPage('bineshield')">查看詳情</button></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="media-frame ratio-thumb clickable-photo" onclick="showPage('so7')">
+                      <img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/so7_01.jpg" alt="OROCHI SO7" onerror="handleImgFallback(this)"/>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="product-name-link" onclick="showPage('so7')">OROCHI SO7</span>
+                    <span class="product-name-jp">オロチ SO7</span>
+                  </td>
+                  <td>輕量小型手持型設計，向手腕或腳踝拍擊即可瞬間捲繞並以繩索拘束</td>
+                  <td>全長：約 70 cm</td>
+                  <td>重量：約 0.44 kg</td>
+                  <td>單一規格（可與 SC17 搭配）</td>
+                  <td><button class="detail-link-btn" onclick="showPage('so7')">查看詳情</button></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="media-frame ratio-thumb clickable-photo" onclick="showPage('sm445')">
+                      <img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/07/sm445_03.png" alt="SASUMATA SM445" onerror="handleImgFallback(this)"/>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="product-name-link" onclick="showPage('sm445')">SASUMATA SM445</span>
+                    <span class="product-name-jp">さすまた SM445</span>
+                  </td>
+                  <td>高強度鋁合金叉桿，深 U 型頭部設計，前端可安裝 CERBERUS SC17</td>
+                  <td>SM445-PSW：約 134–212 cm<br />SM445-1800：約 180 cm</td>
+                  <td>SM445-PSW：約 1.38 kg<br />SM445-1800：約 1.28 kg</td>
+                  <td>SM445-PSW / SM445-1800</td>
+                  <td><button class="detail-link-btn" onclick="showPage('sm445')">查看詳情</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SC17 詳細頁 -->
+    <section id="view-sc17" class="page-view">
+      <div class="container detail-top-bar">
+        <button class="btn-secondary" onclick="showPage('products')">← 返回產品總覽</button>
+      </div>
+      <div class="detail-overview">
+        <div class="container detail-overview-grid">
+          <div>
+            <div class="media-frame ratio-product">
+              <img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sc17_06-01.jpg" alt="CERBERUS SC17" onerror="handleImgFallback(this)"/>
+            </div>
+            <p class="photo-caption-note">圖示為 CERBERUS SC17 安裝於固定長度型叉桿 SM445-1800 之原廠示範照片。</p>
+          </div>
+          <div>
+            <h1 class="detail-model-en">CERBERUS SC17</h1>
+            <div class="detail-model-jp">ケルベロス SC17</div>
+            <p class="detail-description">
+              CERBERUS SC17 為日本佐野機工與日本栃木縣警察共同開發之分離式防護產品。將帶狀本體按壓於對方身體，內部特殊不鏽鋼彈片與高係合強力面黏扣帶即瞬間自動捲繞並限制對方行動；捲繞後本體可與叉桿分離。
+            </p>
+            <h2 class="detail-subheading">產品特色</h2>
+            <ul class="detail-feature-list">
+              <li>瞬間捲繞限制行動，無須依賴牆面即可於開闊空間使用</li>
+              <li>拘束後帶狀本體與叉桿分離，操作人員可迅速退開保持安全距離</li>
+              <li>接觸身體內側採用氯丁橡膠材質，兼具止滑與安全性</li>
+              <li>可選配二段伸縮型叉桿 SM445-PSW 或固定長度型叉桿 SM445-1800</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="spec-section">
+        <div class="container">
+          <div class="spec-section-header">
+            <span class="section-eyebrow">Technical Specifications</span>
+            <h2 class="section-title-main">詳細規格表</h2>
+          </div>
+          <table class="compact-spec-table">
+            <tbody>
+              <tr>
+                <th>產品名稱及型號</th>
+                <td>CERBERUS SC17（ケルベロス SC17）</td>
+                <th>製造國</th>
+                <td>日本</td>
+              </tr>
+              <tr>
+                <th>SC17 本體全長</th>
+                <td>約 168 cm</td>
+                <th>SC17 本體重量</th>
+                <td>約 1.76 kg</td>
+              </tr>
+              <tr>
+                <th>可選桿件規格 1</th>
+                <td><strong>SM445-PSW</strong>：二段伸縮型，全長約 134–212 cm，重量約 1.38 kg</td>
+                <th>可選桿件規格 2</th>
+                <td><strong>SM445-1800</strong>：固定長度型，全長約 180 cm，重量約 1.28 kg</td>
+              </tr>
+              <tr>
+                <th>主要材料</th>
+                <td colspan="3">高硬質不鏽鋼、高係合強力面黏扣帶、釹磁鐵、氯丁橡膠、高強度尼龍布等</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="diagram-section">
+        <div class="container">
+          <div class="diagram-header-row">
+            <span class="section-eyebrow">Visual Guide</span>
+            <h2 class="section-title-main">原廠使用方式與動作圖解</h2>
+          </div>
+          <div class="diagram-grid-4col">
+            <div class="diagram-card">
+              <div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sc17_06-01.jpg" alt="按壓接觸" onerror="handleImgFallback(this)"/></div>
+              <div class="diagram-title">按壓接觸（押し当てる）</div>
+              <p class="diagram-desc">將本體按壓於可疑人員的身體。上半身或下半身皆可使用。</p>
+            </div>
+            <div class="diagram-card">
+              <div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sc17_06-02.jpg" alt="瞬間捲繞" onerror="handleImgFallback(this)"/></div>
+              <div class="diagram-title">瞬間捲繞（巻きつく）</div>
+              <p class="diagram-desc">本體瞬間捲繞包覆對方身體，使其產生短暫空檔並限制活動。</p>
+            </div>
+            <div class="diagram-card">
+              <div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sc17_06-03.jpg" alt="與叉桿分離" onerror="handleImgFallback(this)"/></div>
+              <div class="diagram-title">與叉桿分離（さすまたが分離）</div>
+              <p class="diagram-desc">本體與叉桿分離；在確保安全的情況下，操作人員亦可拉開距離避難。</p>
+            </div>
+            <div class="diagram-card">
+              <div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sc17_06-04.jpg" alt="限制行動" onerror="handleImgFallback(this)"/></div>
+              <div class="diagram-title">限制行動與控制</div>
+              <p class="diagram-desc">藉由本體限制對方行動，在警方抵達現場前更容易安全壓制。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="video-section">
+        <div class="container video-layout-grid">
+          <div>
+            <span class="section-eyebrow">Official Video</span>
+            <h2 class="section-title-main" style="margin-bottom: 14px;">原廠產品影片</h2>
+            <p style="color: var(--color-secondary); font-size: 0.96rem; line-height: 1.8;">
+              展示 CERBERUS SC17 安裝於專用叉桿後之瞬間捲繞、與叉桿分離及限制行動之實機操作。
+            </p>
+          </div>
+          <div>
+            <div class="video-stage">
+              <iframe src="https://www.youtube.com/embed/H5cdDqzRF0Y?rel=0" title="SC17 影片" allowfullscreen></iframe>
+            </div>
+            <div class="video-fallback-bar">
+              <span>若於本機端限制內嵌播放，請點選右側連結：</span>
+              <a href="https://www.youtube.com/watch?v=H5cdDqzRF0Y" target="_blank" rel="noopener noreferrer">於 YouTube 開啟影片 ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail-bottom-nav">
+        <div class="container"><button class="btn-secondary" onclick="showPage('products')">← 返回產品總覽</button></div>
+      </div>
+    </section>
+
+    <!-- SF7 詳細頁 -->
+    <section id="view-sf7" class="page-view">
+      <div class="container detail-top-bar"><button class="btn-secondary" onclick="showPage('products')">← 返回產品總覽</button></div>
+      <div class="detail-overview">
+        <div class="container detail-overview-grid">
+          <div><div class="media-frame ratio-product"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sf7_01.jpg" alt="SF7" onerror="handleImgFallback(this)"/></div></div>
+          <div>
+            <h1 class="detail-model-en">FUDO SF7（型號：SF7-PSL）</h1>
+            <div class="detail-model-jp">不動 SF7</div>
+            <p class="detail-description">FUDO SF7 為具長桿設計的防護產品，採用約 170 cm 長桿搭配瞬間捲繞拘束帶結構，輕量且易於操作。</p>
+            <h2 class="detail-subheading">產品特色</h2>
+            <ul class="detail-feature-list">
+              <li>長桿型設計（全長約 170 cm），保持安全距離</li>
+              <li>輕量化設計（重量約 1.6 kg），減輕操作負擔</li>
+              <li>按壓手腕或腳部即可瞬間捲繞拘束</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="spec-section">
+        <div class="container">
+          <div class="spec-section-header"><span class="section-eyebrow">Technical Specifications</span><h2 class="section-title-main">詳細規格表</h2></div>
+          <table class="compact-spec-table">
+            <tbody>
+              <tr><th>產品名稱</th><td>FUDO SF7（不動 SF7）</td><th>製造國</th><td>日本</td></tr>
+              <tr><th>正式型號</th><td>SF7-PSL</td><th>產品全長</th><td>約 170 cm</td></tr>
+              <tr><th>產品重量</th><td colspan="3">約 1.6 kg</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="diagram-section">
+        <div class="container">
+          <div class="diagram-header-row"><span class="section-eyebrow">Visual Guide</span><h2 class="section-title-main">動作圖解</h2></div>
+          <div class="diagram-grid-4col">
+            <div class="diagram-card"><div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sf7_06-01.jpg" alt="按壓" onerror="handleImgFallback(this)"/></div><div class="diagram-title">按壓手腳</div><p class="diagram-desc">將前端拘束帶按壓於手臂或腿部。</p></div>
+            <div class="diagram-card"><div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sf7_06-02.jpg" alt="捲繞" onerror="handleImgFallback(this)"/></div><div class="diagram-title">瞬間捲繞</div><p class="diagram-desc">拘束帶瞬間捲繞並拘束對方手腳。</p></div>
+            <div class="diagram-card"><div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sf7_06-03.jpg" alt="拉引" onerror="handleImgFallback(this)"/></div><div class="diagram-title">繩索拉引</div><p class="diagram-desc">透過連接繩索持續拉引限制行動。</p></div>
+            <div class="diagram-card"><div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sf7_06-04.jpg" alt="控制" onerror="handleImgFallback(this)"/></div><div class="diagram-title">保持距離與控制</div><p class="diagram-desc">在安全距離下進行控制並等待警方。</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="video-section">
+        <div class="container video-layout-grid">
+          <div><span class="section-eyebrow">Official Video</span><h2 class="section-title-main" style="margin-bottom: 14px;">原廠產品影片</h2></div>
+          <div><div class="video-stage"><iframe src="https://www.youtube.com/embed?listType=user_uploads&list=sano_kiko&rel=0" title="SF7 影片" allowfullscreen></iframe></div></div>
+        </div>
+      </div>
+      <div class="detail-bottom-nav"><div class="container"><button class="btn-secondary" onclick="showPage('products')">← 返回產品總覽</button></div></div>
+    </section>
+
+    <!-- SB224 詳細頁 -->
+    <section id="view-sb224" class="page-view">
+      <div class="container detail-top-bar"><button class="btn-secondary" onclick="showPage('products')">← 返回產品總覽</button></div>
+      <div class="detail-overview">
+        <div class="container detail-overview-grid">
+          <div><div class="media-frame ratio-product"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sb224_01.jpg" alt="SB224" onerror="handleImgFallback(this)"/></div></div>
+          <div>
+            <h1 class="detail-model-en">BENKEI SB224（PSK / PSL）</h1>
+            <div class="detail-model-jp">弁慶 SB224</div>
+            <p class="detail-description">BENKEI SB224 為採用新開發多機能特殊形狀頭部的輕量小型防護產品，頭部朝下放置即可自立設置。</p>
+            <h2 class="detail-subheading">產品特色</h2>
+            <ul class="detail-feature-list">
+              <li>輕量小型化設計，適合有限空間靈活操作</li>
+              <li>特殊形狀產品頭部，勾捕手腳與旋扭控制</li>
+              <li>頭部朝下可自立設置於地面</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="spec-section">
+        <div class="container">
+          <div class="spec-section-header"><span class="section-eyebrow">Technical Specifications</span><h2 class="section-title-main">詳細規格表</h2></div>
+          <table class="compact-spec-table">
+            <tbody>
+              <tr><th>產品名稱</th><td>BENKEI SB224（弁慶 SB224）</td><th>製造國</th><td>日本</td></tr>
+              <tr><th>輕量桿型（SB224-PSK）</th><td>全長：約 148 cm ｜ 重量：約 0.95 kg</td><th>長桿型（SB224-PSL）</th><td>全長：約 173 cm ｜ 重量：約 1.1 kg</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="diagram-section">
+        <div class="container">
+          <div class="diagram-header-row"><span class="section-eyebrow">Visual Guide</span><h2 class="section-title-main">使用示例</h2></div>
+          <div class="diagram-grid-4col">
+            <div class="diagram-card"><div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sb224_06-01.jpg" alt="牽制" onerror="handleImgFallback(this)"/></div><div class="diagram-title">牽制</div><p class="diagram-desc">快速推進或拉回產生威嚇效果。</p></div>
+            <div class="diagram-card"><div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sb224_06-02.jpg" alt="推頂壓制" onerror="handleImgFallback(this)"/></div><div class="diagram-title">推頂壓制</div><p class="diagram-desc">推頂身體維持安全防護距離。</p></div>
+            <div class="diagram-card"><div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sb224_06-03.jpg" alt="勾掃" onerror="handleImgFallback(this)"/></div><div class="diagram-title">勾掃</div><p class="diagram-desc">勾住腿部或手臂橫向撥掃破壞平衡。</p></div>
+            <div class="diagram-card"><div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sb224_06-04.jpg" alt="套入旋扭" onerror="handleImgFallback(this)"/></div><div class="diagram-title">套入旋扭</div><p class="diagram-desc">套入後旋扭限制行動。</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="video-section">
+        <div class="container video-layout-grid">
+          <div><span class="section-eyebrow">Official Video</span><h2 class="section-title-main" style="margin-bottom: 14px;">原廠產品影片</h2></div>
+          <div><div class="video-stage"><iframe src="https://www.youtube.com/embed?listType=user_uploads&list=sano_kiko&rel=0" title="SB224 影片" allowfullscreen></iframe></div></div>
+        </div>
+      </div>
+      <div class="detail-bottom-nav"><div class="container"><button class="btn-secondary" onclick="showPage('products')">← 返回產品總覽</button></div></div>
+    </section>
+
+    <!-- BINE SHIELD 詳細頁 -->
+    <section id="view-bineshield" class="page-view">
+      <div class="container detail-top-bar"><button class="btn-secondary" onclick="showPage('products')">← 返回產品總覽</button></div>
+      <div class="detail-overview">
+        <div class="container detail-overview-grid">
+          <div><div class="media-frame ratio-product"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/baindate_03-03.png" alt="BINE SHIELD" onerror="handleImgFallback(this)"/></div></div>
+          <div>
+            <h1 class="detail-model-en">BINE SHIELD（バイン盾）</h1>
+            <div class="detail-model-jp">バイン盾</div>
+            <p class="detail-description">BINE SHIELD 為兼具日常文書處理與緊急防護功能的活頁夾型防護小盾，平時作為 A4 活頁夾，緊急時可作為防護小盾避難。</p>
+            <h2 class="detail-subheading">產品特色</h2>
+            <ul class="detail-feature-list">
+              <li>平時作為 A4 活頁夾使用，不引起警戒</li>
+              <li>封底採用耐燃高衝擊樹脂特殊素材</li>
+              <li>內頁設有文件夾層與手腕固定帶</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="spec-section">
+        <div class="container">
+          <div class="spec-section-header"><span class="section-eyebrow">Technical Specifications</span><h2 class="section-title-main">詳細規格表</h2></div>
+          <table class="compact-spec-table">
+            <tbody>
+              <tr><th>產品名稱</th><td>BINE SHIELD（バイン盾）</td><th>製造國</th><td>日本</td></tr>
+              <tr><th>尺寸與重量</th><td>約 335 × 237 mm ｜ 約 525 g</td><th>顏色選擇</th><td>黑、藍、粉、綠</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="diagram-section">
+        <div class="container">
+          <div class="diagram-header-row"><span class="section-eyebrow">Visual Guide</span><h2 class="section-title-main">構造圖解</h2></div>
+          <div class="diagram-grid-4col">
+            <div class="diagram-card"><div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/baindate_01.jpg" alt="正面" onerror="handleImgFallback(this)"/></div><div class="diagram-title">產品正面</div><p class="diagram-desc">A4 活頁夾外觀。</p></div>
+            <div class="diagram-card"><div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/baindate_03-03.png" alt="背面" onerror="handleImgFallback(this)"/></div><div class="diagram-title">產品背面</div><p class="diagram-desc">耐燃高衝擊樹脂封底。</p></div>
+            <div class="diagram-card"><div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/baindate_03-01.png" alt="內部" onerror="handleImgFallback(this)"/></div><div class="diagram-title">內部構造</div><p class="diagram-desc">文件夾層與固定夾。</p></div>
+            <div class="diagram-card"><div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/baindate_03-04.png" alt="固定帶" onerror="handleImgFallback(this)"/></div><div class="diagram-title">固定帶與使用</div><p class="diagram-desc">可調式手腕固定帶。</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="video-section">
+        <div class="container video-layout-grid">
+          <div><span class="section-eyebrow">Official Video</span><h2 class="section-title-main" style="margin-bottom: 14px;">原廠產品影片</h2></div>
+          <div><div class="video-stage"><iframe src="https://www.youtube.com/embed?listType=user_uploads&list=sano_kiko&rel=0" title="BINE SHIELD 影片" allowfullscreen></iframe></div></div>
+        </div>
+      </div>
+      <div class="detail-bottom-nav"><div class="container"><button class="btn-secondary" onclick="showPage('products')">← 返回產品總覽</button></div></div>
+    </section>
+
+    <!-- OROCHI SO7 詳細頁 -->
+    <section id="view-so7" class="page-view">
+      <div class="container detail-top-bar"><button class="btn-secondary" onclick="showPage('products')">← 返回產品總覽</button></div>
+      <div class="detail-overview">
+        <div class="container detail-overview-grid">
+          <div><div class="media-frame ratio-product"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/so7_01.jpg" alt="SO7" onerror="handleImgFallback(this)"/></div></div>
+          <div>
+            <h1 class="detail-model-en">OROCHI SO7</h1>
+            <div class="detail-model-jp">オロチ SO7</div>
+            <p class="detail-description">OROCHI SO7 為全長約 70 cm、重量約 0.44 kg 的輕量小型手持型防護產品，拍擊手腕或腳踝即可瞬間捲繞。</p>
+            <h2 class="detail-subheading">產品特色</h2>
+            <ul class="detail-feature-list">
+              <li>輕量小型手持型設計</li>
+              <li>朝手腕或腳踝拍擊即可瞬間捲繞拘束</li>
+              <li>可搭配 CERBERUS SC17 使用</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="spec-section">
+        <div class="container">
+          <div class="spec-section-header"><span class="section-eyebrow">Technical Specifications</span><h2 class="section-title-main">詳細規格表</h2></div>
+          <table class="compact-spec-table">
+            <tbody>
+              <tr><th>產品名稱及型號</th><td>OROCHI SO7（オロチ SO7）</td><th>製造國</th><td>日本</td></tr>
+              <tr><th>產品全長</th><td>約 70 cm</td><th>產品重量</th><td>約 0.44 kg</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="diagram-section">
+        <div class="container">
+          <div class="diagram-header-row"><span class="section-eyebrow">Visual Guide</span><h2 class="section-title-main">動作圖解</h2></div>
+          <div class="diagram-grid-4col">
+            <div class="diagram-card"><div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/so7_06-01.jpg" alt="拍擊" onerror="handleImgFallback(this)"/></div><div class="diagram-title">拍擊接觸</div><p class="diagram-desc">朝手腕或腳踝拍擊按壓。</p></div>
+            <div class="diagram-card"><div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/so7_06-02.jpg" alt="捲繞" onerror="handleImgFallback(this)"/></div><div class="diagram-title">瞬間捲繞</div><p class="diagram-desc">瞬間捲繞拘束手腕或腳踝。</p></div>
+            <div class="diagram-card"><div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/so7_06-03.jpg" alt="抽出" onerror="handleImgFallback(this)"/></div><div class="diagram-title">抽出握柄</div><p class="diagram-desc">前端捲繞固定後抽出握柄。</p></div>
+            <div class="diagram-card"><div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/so7_06-04.jpg" alt="拘束" onerror="handleImgFallback(this)"/></div><div class="diagram-title">繩索纏繞拘束</div><p class="diagram-desc">以連接繩索纏繞收緊限制行動。</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="video-section">
+        <div class="container video-layout-grid">
+          <div><span class="section-eyebrow">Official Video</span><h2 class="section-title-main" style="margin-bottom: 14px;">原廠產品影片</h2></div>
+          <div><div class="video-stage"><iframe src="https://www.youtube.com/embed?listType=user_uploads&list=sano_kiko&rel=0" title="SO7 影片" allowfullscreen></iframe></div></div>
+        </div>
+      </div>
+      <div class="detail-bottom-nav"><div class="container"><button class="btn-secondary" onclick="showPage('products')">← 返回產品總覽</button></div></div>
+    </section>
+
+    <!-- SM445 詳細頁 -->
+    <section id="view-sm445" class="page-view">
+      <div class="container detail-top-bar"><button class="btn-secondary" onclick="showPage('products')">← 返回產品總覽</button></div>
+      <div class="detail-overview">
+        <div class="container detail-overview-grid">
+          <div><div class="media-frame ratio-product"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/07/sm445_03.png" alt="SM445" onerror="handleImgFallback(this)"/></div></div>
+          <div>
+            <h1 class="detail-model-en">SASUMATA SM445（SM445-PSW / SM445-1800）</h1>
+            <div class="detail-model-jp">さすまた SM445</div>
+            <p class="detail-description">SASUMATA SM445 採用原創異型斷面高強度鋁合金製造，前端可安裝 CERBERUS SC17。提供二段伸縮型與固定長度型兩種型式。</p>
+            <h2 class="detail-subheading">產品特色</h2>
+            <ul class="detail-feature-list">
+              <li>原創異型斷面高強度鋁合金桿身</li>
+              <li>深 U 字型頭部設計，便於保持安全距離與壓制</li>
+              <li>前端可安裝 CERBERUS SC17</li>
+              <li>SM445-PSW 桿頭與桿身可拆卸，便於攜帶收納</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="spec-section">
+        <div class="container">
+          <div class="spec-section-header"><span class="section-eyebrow">Technical Specifications</span><h2 class="section-title-main">詳細規格表</h2></div>
+          <table class="compact-spec-table">
+            <tbody>
+              <tr><th>產品名稱</th><td>SASUMATA SM445（さすまた SM445）</td><th>製造國</th><td>日本</td></tr>
+              <tr><th>二段伸縮型（SM445-PSW）</th><td>全長：約 134–212 cm ｜ 重量：約 1.38 kg</td><th>固定長度型（SM445-1800）</th><td>全長：約 180 cm ｜ 重量：約 1.28 kg</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="diagram-section">
+        <div class="container">
+          <div class="diagram-header-row"><span class="section-eyebrow">Visual Guide</span><h2 class="section-title-main">型式與結構圖解</h2></div>
+          <div class="diagram-grid-4col">
+            <div class="diagram-card"><div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/07/sm445_03.png" alt="伸縮型" onerror="handleImgFallback(this)"/></div><div class="diagram-title">SM445-PSW 二段伸縮型</div><p class="diagram-desc">全長約 134–212 cm，重量約 1.38 kg。</p></div>
+            <div class="diagram-card"><div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sm445_01.jpg" alt="固定型" onerror="handleImgFallback(this)"/></div><div class="diagram-title">SM445-1800 固定長度型</div><p class="diagram-desc">全長約 180 cm，重量約 1.28 kg。</p></div>
+            <div class="diagram-card"><div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sm445_04-01.jpg" alt="拆卸結構" onerror="handleImgFallback(this)"/></div><div class="diagram-title">桿頭與桿身拆卸結構</div><p class="diagram-desc">U 字型桿頭與桿身可分離拆卸，便於收納。</p></div>
+            <div class="diagram-card"><div class="media-frame ratio-guide"><img src="https://www.sanokiko.co.jp/wp/wp-content/uploads/2026/06/sm445_02-01.jpg" alt="安裝結構" onerror="handleImgFallback(this)"/></div><div class="diagram-title">前端安裝結構</div><p class="diagram-desc">可直接吸附安裝 CERBERUS SC17。</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="video-section">
+        <div class="container video-layout-grid">
+          <div><span class="section-eyebrow">Official Video</span><h2 class="section-title-main" style="margin-bottom: 14px;">原廠產品影片</h2></div>
+          <div>
+            <div class="video-stage"><iframe src="https://www.youtube.com/embed/H5cdDqzRF0Y?rel=0" title="SM445 影片" allowfullscreen></iframe></div>
+            <div class="video-fallback-bar">
+              <span>若於本機端限制內嵌播放，請點選右側連結：</span>
+              <a href="https://www.sanokiko.co.jp/service/security/sm445" target="_blank" rel="noopener noreferrer">開啟官方頁面 ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail-bottom-nav"><div class="container"><button class="btn-secondary" onclick="showPage('products')">← 返回產品總覽</button></div></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="view-about" class="page-view">
+      <div class="page-header"><div class="container"><h1 class="page-title">關於佐野機工（SANO KIKO）</h1></div></div>
+      <div class="container">
+        <div class="prose-container">
+          <p>有限会社佐野機工（SANO KIKO Co., Ltd.）創立於 1966 年，總部位於日本栃木縣真岡市，為具備金屬沖壓、精密薄板彈簧加工及異材質複合組裝技術的日本製造企業。</p>
+          <p>佐野機工的安全防護產品系列係應日本栃木縣警察之邀共同研究開發，旨在克服傳統 U 字型叉桿於無牆壁空間難以控制、需要較大體力與技術，以及操作者無法輕易脫離等限制。</p>
+          <p>全系列防護產品皆於日本國內製造，並以「防禦型設計（Defensive Design）」為核心理念，透過限制可疑人員的行動來製造應變空檔，協助現場人員保持安全距離。</p>
+          <div style="margin-top: 40px;"><a class="btn-secondary" href="https://www.sanokiko.co.jp/service/security/" target="_blank" rel="noopener noreferrer">瀏覽日本佐野機工官方網站 ↗</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="view-contact" class="page-view">
+      <div class="page-header"><div class="container"><h1 class="page-title">聯絡洽詢</h1></div></div>
+      <div class="container">
+        <div class="prose-container">
+          <p>Anitech Material Corp.（聯禾應用材料有限公司）為日本 SANO KIKO（佐野機工）台灣總代理。</p>
+          <p>有關 SANO KIKO 安全防護產品之規格諮詢、機關企業採購或通路合作事宜，請透過 Anitech Material Corp. 官方網站與我們聯繫。</p>
+          <div style="margin-top: 40px;"><a class="btn-corporate" href="https://www.anitech.com.tw/" target="_blank" rel="noopener noreferrer">前往 Anitech 官方網站聯絡我們 (https://www.anitech.com.tw/) ↗</a></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">ANITECH MATERIAL CORP.<span>聯禾應用材料有限公司</span></div>
+        <nav class="footer-nav" aria-label="頁尾導覽">
+          <button onclick="showPage('home')">HOME</button>
+          <button onclick="showPage('products')">PRODUCTS</button>
+          <button onclick="showPage('about')">ABOUT</button>
+          <button onclick="showPage('contact')">CONTACT</button>
+          <a href="https://www.anitech.com.tw/" target="_blank" rel="noopener noreferrer">CONTACT US ↗</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <div>© Anitech Material Corp. All Rights Reserved.</div>
+        <div><a href="https://www.anitech.com.tw/" target="_blank" rel="noopener noreferrer">https://www.anitech.com.tw/</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const VALID_PAGES = ['home', 'products', 'sc17', 'sf7', 'sb224', 'bineshield', 'so7', 'sm445', 'about', 'contact'];
+    const PRODUCT_DETAIL_PAGES = ['sc17', 'sf7', 'sb224', 'bineshield', 'so7', 'sm445'];
+
+    function showPage(pageId, pushHash = true) {
+      if (!VALID_PAGES.includes(pageId)) pageId = 'home';
+      document.querySelectorAll('.page-view').forEach(section => section.classList.remove('active'));
+      const activeSection = document.getElementById('view-' + pageId);
+      if (activeSection) activeSection.classList.add('active');
+
+      const activeNavKey = PRODUCT_DETAIL_PAGES.includes(pageId) ? 'products' : pageId;
+      document.querySelectorAll('.nav-link').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-target') === activeNavKey);
+      });
+
+      const mainNav = document.getElementById('mainNav');
+      if (mainNav) mainNav.classList.remove('open');
+
+      if (pushHash) history.pushState({ page: pageId }, '', '#' + pageId);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleMobileNav() {
+      const mainNav = document.getElementById('mainNav');
+      if (mainNav) mainNav.classList.toggle('open');
+    }
+
+    function handleImgFallback(imgEl) {
+      const rawFallbacks = imgEl.getAttribute('data-fallbacks');
+      const triedIndex = parseInt(imgEl.getAttribute('data-tried-index') || '0', 10);
+      if (rawFallbacks) {
+        const list = rawFallbacks.split('|').map(s => s.trim()).filter(Boolean);
+        if (triedIndex < list.length) {
+          imgEl.setAttribute('data-tried-index', String(triedIndex + 1));
+          imgEl.src = list[triedIndex];
+          return;
+        }
+      }
+      const frame = imgEl.closest('.media-frame');
+      if (frame) frame.classList.add('is-fallback');
+    }
+
+    window.addEventListener('popstate', () => {
+      const hashPage = window.location.hash.replace('#', '');
+      showPage(VALID_PAGES.includes(hashPage) ? hashPage : 'home', false);
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const initialHash = window.location.hash.replace('#', '');
+      if (VALID_PAGES.includes(initialHash)) showPage(initialHash, false);
+    });
+  </script>
+</body>
+</html>
